@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <form action="#" onsubmit="validate()" method="GET">
+                <h2>Contact Us</h2>
+                <div class="full-name">
+                    <label for="full-name">FULL NAME</label><br/>
+                    <input type="text" placeholder="Enter Your Name" name="fullname" id="full-name"/>
+                </div>
+                <div class="email-phone">
+                    <div class="email">
+                        <label for="email">EMAIL</label><br/>
+                        <input type="text" placeholder="Enter Your Email" name="mail" id="email"/>    
+                    </div>
+                    <div class="phone">
+                        <label for="phone">PHONE</label><br/>
+                        <input type="text" placeholder="Enter Number Phone" name="phone" id="phone"/>    
+                    </div>
+                </div>
+                <div class="service">
+                    <label for="service">NEEDED SERVICES</label><br/>
+                    <select type="text" title="Click to select Service" name="servie" id="service">
+                        <option value="Ecommerce Business">Ecommerce Business</option>
+                        <option value="accessibility">Accessibility</option>
+                        <option value="control">Control</option>
+                        <option value="information">Information</option>
+                        <option value="convenience">Convenience</option>
+                        <option value="compatibility">Compatibility</option>
+                        <option value="reliability">Reliability</option>
+                    </select>
+                </div>
+                <div class="products">
+                    <label for="products">WHAT TYPE OF PRODUCTS DO YOU SELL?</label><br/>
+                    <div class="products-list">
+                        <label for="physical"><input type="radio" name="product" id="physical"> Physical Products</label>
+                        <label for="digital"><input type="radio" name="product" id="digital"> Digital Products</label>
+                        <label for="consult"><input type="radio" name="product" id="consult"> Services Consulting</label>
+                    </div>
+                </div>
+                <div class="budget">
+                    <label for="cost">BUDGET</label><br />
+                    <label for="budget-value">$<span class="from">1500</span> - $<span class="to">15000</span></label><br />
+                    <div class="range-multi">
+                        <input type="range" oninput="slideRange(this)" value="15000" name="budget-cost" id="budget-value" min="1" max="50000" />
+                    </div>
+                </div>
+                <div class="message">
+                    <label for="msg">MESSAGE</label><br />
+                    <textarea name="message-content" id="msg" placeholder="Your message here..." rows="3"></textarea>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit">Submit <span>&#10230;</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="./main.js"></script>
+</script>
+</body>
+</html>
